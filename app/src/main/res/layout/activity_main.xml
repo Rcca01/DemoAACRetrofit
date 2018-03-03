@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.logonrm.demoaacretrofit.ui.mainscreen.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        tools:context="com.example.logonrm.demoaacretrofit.ui.mainscreen.MainActivity">
+
+        <EditText
+            android:id="@+id/edCep"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o CEP"/>
+
+        <Button
+            android:id="@+id/btnPesquisar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesquisar"/>
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Info"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carregando os dados..."/>
+    </LinearLayout>
+</FrameLayout>
